@@ -7,7 +7,7 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboard';
-import CreatProfile from './components/profile-forms/CreateProfile';
+import CreateProfile from './components/profile-forms/CreateProfile';
 import PrivateRoute from './components/routing/PrivateRoute';
 // Redux
 import { Provider } from 'react-redux';
@@ -16,7 +16,6 @@ import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 // styling
 import './App.css';
-import CreateProfile from './components/profile-forms/CreateProfile';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
